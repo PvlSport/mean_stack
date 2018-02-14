@@ -19,6 +19,7 @@ export class CatsComponent implements OnInit {
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
+  description = new FormControl('', Validators.required);
   age = new FormControl('', Validators.required);
   weight = new FormControl('', Validators.required);
 
@@ -30,6 +31,7 @@ export class CatsComponent implements OnInit {
     this.getCats();
     this.addCatForm = this.formBuilder.group({
       name: this.name,
+      description: this.description,
       age: this.age,
       weight: this.weight
     });

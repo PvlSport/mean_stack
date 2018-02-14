@@ -2,6 +2,7 @@ import * as mongoose from 'mongoose';
 
 const catSchema = new mongoose.Schema({
   name: String,
+  description: String,
   weight: Number,
   age: Number
 });
